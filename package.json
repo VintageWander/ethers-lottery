@@ -1,0 +1,28 @@
+{
+  "name": "ethers-lottery",
+  "version": "1.0.0",
+  "description": "Lottery smart contract deployed on the Ethereum chain",
+  "author": "Vintage Wander",
+  "devDependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.4.1",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.47.0",
+    "hardhat": "^2.17.1",
+    "hardhat-deploy": "^0.11.36",
+    "hardhat-gas-reporter": "^1.0.9",
+    "hardhat-shorthand": "^1.0.0"
+  },
+  "scripts": {
+    "compile": "rm -rf artifacts typechain-types && npx hardhat compile",
+    "test": "npm run test:unit && npm run test:staging && npm run lint",
+    "test:unit": "npx hardhat test",
+    "test:staging": "npx hardhat test --network sepolia",
+    "deploy:dev": "npx hardhat deploy --network hardhat",
+    "deploy:sepolia": "npx hardhat deploy --network sepolia",
+    "lint": "eslint"
+  }
+}
