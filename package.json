@@ -2,7 +2,7 @@
   "name": "ethers-lottery",
   "version": "1.0.0",
   "description": "Lottery smart contract deployed on the Ethereum chain",
-  "author": "Vintage Wander",
+  "author": "Andrew Giang",
   "devDependencies": {
     "@chainlink/contracts": "^0.6.1",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",

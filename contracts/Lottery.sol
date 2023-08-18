@@ -17,7 +17,7 @@ error Lottery__UpkeepNotNeeded(
 
 /**
  * @title Lottery Contract with organizer fee
- * @author Vintage Wander
+ * @author Andrew Giang
  * @dev Implements VRFConsumerBaseV2 and Chainlink keepers
  */
 contract Lottery is VRFConsumerBaseV2, KeeperCompatibleInterface {
